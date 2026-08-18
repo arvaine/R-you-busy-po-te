@@ -147,7 +147,7 @@
       const name = nameInput.value.trim();
 
       if (!name) {
-        nameError.textContent = "Please enter your name po 😭";
+        nameError.textContent = "Please enter your name po hehe";
         nameInput.focus();
         return;
       }
@@ -205,7 +205,7 @@
 
     submitAnswer.onclick = () => {
       if (!selectedLetter) {
-        answer.textContent = "Please select an answer first po 😭";
+        answer.textContent = "Please select an answer first po ";
         return;
       }
 
@@ -213,16 +213,16 @@
         const text = customAnswer.value.trim();
 
         if (!text) {
-          answer.textContent = "Please type your own answer po 😭";
+          answer.textContent = "Please type your own answer po ";
           customAnswer.focus();
           return;
         }
 
         sendChoice("E", text);
-        answer.textContent = "Sent po 😭";
+        answer.textContent = "Sent poooo";
       } else {
         sendChoice(selectedLetter, selectedChoice);
-        answer.textContent = "Sent po 😭";
+        answer.textContent = "Sent poooo";
       }
 
       submitAnswer.disabled = true;
